@@ -8,7 +8,44 @@
 <body>
     <nav><a href="/index.html"> volver atrás <a></nav>
     <form action="/Forms/index.html" method="get">
-        <input type="text" name="login" placeholder="tu usuario de la aplicaión">
+        <ul>
+            <li>
+        <label for="login">Usuario: </label>
+        <input type="text" name="login" placeholder="Tu usuario de la aplicación">
+            </li>
+            <li>
+        <label for="login">Contraseña: </label>
+        <input type="password" name="password" placeholder="Tu contraseña">
+            </li>
+            <li>
+        <label for="login">email: </label>
+        <input type="mail" name="email" placeholder="Tu correo electrónico">
+            </li>
+        <li>
+            <label for="estimation">Estimación:</label>
+                <select name=""estimación">
+                    <option value="1">XS</option>
+                    <option value="2">S</option>
+                    <option value="3">M</option>
+                    <option value="5">L</option>
+                    <option value="8">XL</option>
+                </select>
+            </li>
+            <li>
+                <label for="payment">Tipo de pago:</label>
+                <input name="payment" type="radio" value="credit card">Tarjeta de crédito</input>
+                <input name="payment" type="radio" value="paypal">Paypal</input>
+                <input name="payment" type="radio" value="bank transfer">Transferencia bancaria:</input>
+            </li>
+            <li>
+                <label for="contact">Contacto:</label>
+                <input name="payment" type="checkbox" value="email">Correo electrónico</input>
+                <input name="payment" type="checkbox" value="sms">SMS</input>
+                <input name="payment" type="checkbox" value="call">Llamada telefóinca</input>
+            
+        </ul>
+        <button type="submit"> Enviar</button>
+        <button type="reset"> Limpiar</button>
     </form>
     
 </body>

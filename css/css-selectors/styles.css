@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+     font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+body{
+    background-color: #f8fafc
+}
+section {
+    background-color: #ffffff;
+    margin: 32px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px lightslategray;
+}
+h1 {
+    font-size: 32px;
+    color: #1e293b;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+
+/*======================================*/
+
+.ex1-1, .ex1-2 {
+    background-color: aqua;
+    height: 40px;
+    width:60px;
+    margin-botton: 8px;
+
+}
