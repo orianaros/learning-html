@@ -46,9 +46,9 @@ img {
 }
 
 header {
-    background-color: #174c45
+    background-color: #174c45;
     color:#F3EBDD;
-    display: flex:
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
