@@ -12,12 +12,33 @@ h1 {
 h2  {
     font-size: 56px;
     line-height: 1.1;
-    max-width:700px;
+    max width: 450px;
     margin-bottom: 20px;
 }
 
-main{
-    margin: 60px;
+main {
+    margin: 30px 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+section {
+    width: 40%;
+    margin-top: -20px;
+}
+
+.fotos {
+    width: 60%;
+    position: relative;
+    margin-top: -20px;
+}
+.fotos img:last-child {
+    width: 55%;
+    position: absolute;
+    bottom: -30px;
+    left: -40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 nav {
     display: flex;
@@ -36,12 +57,9 @@ section > p:first-child {
     letter-spacing: 2px;
 }
 
-img { 
-    width: 85%;
-    max-width: 600px;
+img {
+    width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 15px;
 }
 
@@ -65,4 +83,80 @@ header nav {
 }
 header nav a {
     color: #F3EBDD;
+}
+section a {
+    background-color: #174C45;
+    color: #F3EBDD;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+
+
+/* Diseño de la página de la receta */
+.pagina-receta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+    gap: 25px;
+}
+
+.pagina-receta section {
+    width: 100%;
+    margin-top: 0;
+}
+
+.pagina-receta h2 {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.pagina-receta .fotos {
+    width: 100%;
+    max-width: 550px;
+    margin-top: 0;
+}
+
+.pagina-receta .fotos img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.contenido-receta {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+    color: #174C45;
+}
+
+.contenido-receta h2 {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.contenido-receta ul,
+.contenido-receta ol {
+    text-align: left;
+    line-height: 1.9;
+}
+
+/* Corregir la posición de la foto en receta.html */
+.pagina-receta .fotos {
+    position: relative;
+    margin-top: 0;
+}
+
+.pagina-receta .fotos img:last-child {
+    position: static;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    display: block;
+    bottom: auto;
+    left: auto;
 }
