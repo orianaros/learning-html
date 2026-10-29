@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra receta de ceviche</title>
+    <style>
+        /* ESTILOS BASE */
+        body {
+            background-color: #F3EBDD;
+            color: #174C45;
+            font-family: Georgia, serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        h1 {
+            font-size: 48px;
+            margin-top: 5%;
+        }
+        h2 {
+            font-size: 56px;
+            line-height: 1.1;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+       
+        /* Ajuste para que las imágenes sean fluidas */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+        }
+
+        /* NAVEGACIÓN Y HEADER */
+        header {
+            background-color: #174c45;
+            color: #F3EBDD;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+        }
+        header h1 {
+            color: #F3EBDD;
+            font-size: 24px;
+            margin: 0;
+        }
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        header nav a {
+            color: #F3EBDD;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* DISEÑO PRINCIPAL (PANTALLAS GRANDES) */
+        .pagina-receta {
+            display: flex;
+            flex-direction: row; /* Lado a lado en PC */
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px; /* Evita que se estire al infinito en monitores muy anchos */
+            margin: 5% auto;
+            padding: 0 5%;
+            gap: 50px;
+        }
+        .pagina-receta section {
+            width: 45%;
+            text-align: left;
+        }
+        .pagina-receta section > p:first-child {
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+        .pagina-receta .fotos {
+            width: 50%;
+            position: relative;
+        }
+       
+        /* CONTENIDO DE LA RECETA Y FORMULARIO */
+        .contenido-receta {
+            max-width: 800px;
+            margin: 5% auto;
+            padding: 0 5%;
+            box-sizing: border-box;
+            color: #174C45;
+        }
+        .contenido-receta h2 {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 42px;
+        }
+        .contenido-receta ul,
+        .contenido-receta ol {
+            text-align: left;
+            line-height: 1.9;
+            font-size: 18px;
+        }
+
+        /* FORMULARIO */
+        form {
+            width: 100%;
+            margin: 0 auto;
+            text-align: left;
+        }
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #174C45;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        form button {
+            background-color: #174C45;
+            color: #F3EBDD;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        /* ========================================= */
+        /* MEDIA QUERIES (MÓVILES Y TABLETS PEQUEÑAS)*/
+        /* ========================================= */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            header nav {
+                justify-content: center;
+            }
+           
+            /* Ajuste de tipografías */
+            h1 { font-size: 36px; text-align: center; }
+            h2 { font-size: 32px; text-align: center; }
+           
+            /* Apilar elementos verticalmente en móvil */
+            .pagina-receta {
+                flex-direction: column;
+                text-align: center;
+                gap: 25px;
+            }
+            .pagina-receta section {
+                width: 100%;
+                text-align: center;
+            }
+            .pagina-receta .fotos {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ceviche Peruano</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#historia">Historia</a>
+            <a href="#receta">Nuestra Receta</a>
+            <a href="#donde">Dónde probarlo</a>
+        </nav>
+    </header>
+
+    <main class="pagina-receta">
+        <section>
+            <p>TRADICIÓN PERUANA</p>
+            <h2>Nuestra receta de ceviche</h2>
+            <p>Un plato fresco que reúne pescado, limón, cebolla y el sabor de la gastronomía peruana.</p>
+        </section>
+
+        <div class="fotos">
+            <img src="./images/ceviche.jpg" alt="Plato de ceviche peruano">
+        </div>
+    </main>
+
+    <section class="contenido-receta">
+        <h2>Ingredientes</h2>
+        <ul>
+            <li>500 g de pescado blanco fresco</li>
+            <li>8 limones</li>
+            <li>1 cebolla roja</li>
+            <li>Cilantro fresco</li>
+            <li>Sal y ají al gusto</li>
+            <li>Camote y maíz para acompañar</li>
+        </ul>
+
+        <h2>Preparación</h2>
+        <ol>
+            <li>Corta el pescado en dados y mantenlo refrigerado.</li>
+            <li>Corta la cebolla en tiras finas y pica el cilantro.</li>
+            <li>Mezcla el pescado con el limón, la sal y el ají.</li>
+            <li>Añade la cebolla y el cilantro, mezcla y sirve inmediatamente.</li>
+            <li>Acompaña con camote y maíz.</li>
+        </ol>
+    </section>
+   
+    <section class="formulario contenido-receta">
+        <h2>¿Qué te ha parecido la receta?</h2>
+
+        <form>
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <p style="margin-top: 20px;">¿Te ha gustado la receta?</p>
+
+            <input type="radio" id="si" name="valoracion" value="si">
+            <label for="si">Sí, me ha gustado</label>
+            <br>
+            <input type="radio" id="no" name="valoracion" value="no">
+            <label for="no">Puede mejorar</label>
+
+            <br><br>
+
+            <label for="comentario">Déjanos un comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+            <br><br>
+
+            <button type="submit">Enviar valoración</button>
+        </form>
+    </section>
+
+    <p style="text-align: center; margin-bottom: 40px; margin-top: 20px;">
+        <a href="#inicio" style="color: #174C45; text-decoration: none;">← Volver a la portada</a>
+    </p>
+
+</body>
+</html>
