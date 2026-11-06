@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boleto de La Quiniela hecho con HTML y CSS">
+    <title>La Quiniela - Jornada 1</title>
+    <!-- Fuente estrecha parecida a la del boleto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap">
+    <!-- Hoja de estilos en archivo aparte (el método recomendado) -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- El boleto entero es un formulario: así podemos "enviar" la apuesta -->
+<form class="boleto" action="#" method="get">
+
+    <!-- ========== CABECERA ========== -->
+    <header>
+        <div class="marca">
+            <img src="./images/imagen.loterias.jpg" alt="Logo de Loterías y Apuestas del Estado">
+        </div>
+
+        <div class="centro">
+            <h1 class="titulo-azul">SENCILLO-MÚLTIPLE <span>261</span></h1>
+            <p class="instrucciones">
+                <strong>SENCILLAS:</strong> Marque 14 signos por bloque (mínimo 2) en la zona de PRONÓSTICOS.<br>
+                <strong>MÚLTIPLES:</strong> Marque los pronósticos sólo en bloque 1 y el número de Dobles y Triples en la zona de COMBINACIONES.
+            </p>
+            <div class="jornada">
+                <span class="liga">1.ª Liga BBVA / 2.ª Liga Adelante</span>
+                <span>JORNADA: <b>1.ª</b></span>
+                <span>FECHA: <b>23-8-15</b></span>
+            </div>
+        </div>
+
+        <div class="marca-derecha">
+             <img src="images/quinielalogo.png" alt="Logo de La Quiniela">
+        </div>
+    </header>
+
+    <!-- ========== TABLA DE PRONÓSTICOS ========== -->
+    <!-- El div permite hacer scroll horizontal en pantallas pequeñas (overflow) -->
+    <div class="contenedor-tabla">
+    <table class="quiniela">
+        <caption>Boleto de La Quiniela - Jornada 1</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <!-- colspan: una celda que ocupa 8 columnas -->
+                <th class="titulo-pronosticos" colspan="8">PRONÓSTICOS</th>
+                <th class="titulo-comb" colspan="2">COMBINACIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- Partido 1 -->
+        <tr>
+          <th class="partido"><div><span>DEPORTIVO - R. SOCIEDAD</span><span class="num">1</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p1" value="1"><span>1</span></label><label><input type="checkbox" name="b1p1" value="X"><span>X</span></label><label><input type="checkbox" name="b1p1" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p1" value="1"><span>1</span></label><label><input type="checkbox" name="b2p1" value="X"><span>X</span></label><label><input type="checkbox" name="b2p1" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p1" value="1"><span>1</span></label><label><input type="checkbox" name="b3p1" value="X"><span>X</span></label><label><input type="checkbox" name="b3p1" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p1" value="1"><span>1</span></label><label><input type="checkbox" name="b4p1" value="X"><span>X</span></label><label><input type="checkbox" name="b4p1" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p1" value="1"><span>1</span></label><label><input type="checkbox" name="b5p1" value="X"><span>X</span></label><label><input type="checkbox" name="b5p1" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p1" value="1"><span>1</span></label><label><input type="checkbox" name="b6p1" value="X"><span>X</span></label><label><input type="checkbox" name="b6p1" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p1" value="1"><span>1</span></label><label><input type="checkbox" name="b7p1" value="X"><span>X</span></label><label><input type="checkbox" name="b7p1" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p1" value="1"><span>1</span></label><label><input type="checkbox" name="b8p1" value="X"><span>X</span></label><label><input type="checkbox" name="b8p1" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="1"><span>1</span></label></td>
+          <td class="comb"><label><input type="radio" name="triples" value="1"><span>1</span></label></td>
+        </tr>
+        <!-- Partido 2 -->
+        <tr>
+          <th class="partido"><div><span>RAYO VALLECANO - VALENCIA</span><span class="num">2</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p2" value="1"><span>1</span></label><label><input type="checkbox" name="b1p2" value="X"><span>X</span></label><label><input type="checkbox" name="b1p2" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p2" value="1"><span>1</span></label><label><input type="checkbox" name="b2p2" value="X"><span>X</span></label><label><input type="checkbox" name="b2p2" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p2" value="1"><span>1</span></label><label><input type="checkbox" name="b3p2" value="X"><span>X</span></label><label><input type="checkbox" name="b3p2" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p2" value="1"><span>1</span></label><label><input type="checkbox" name="b4p2" value="X"><span>X</span></label><label><input type="checkbox" name="b4p2" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p2" value="1"><span>1</span></label><label><input type="checkbox" name="b5p2" value="X"><span>X</span></label><label><input type="checkbox" name="b5p2" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p2" value="1"><span>1</span></label><label><input type="checkbox" name="b6p2" value="X"><span>X</span></label><label><input type="checkbox" name="b6p2" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p2" value="1"><span>1</span></label><label><input type="checkbox" name="b7p2" value="X"><span>X</span></label><label><input type="checkbox" name="b7p2" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p2" value="1"><span>1</span></label><label><input type="checkbox" name="b8p2" value="X"><span>X</span></label><label><input type="checkbox" name="b8p2" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="triples" value="2"><span>2</span></label></td>
+        </tr>
+        <!-- Partido 3 -->
+        <tr>
+          <th class="partido"><div><span>ATHLETIC CLUB - BARCELONA</span><span class="num">3</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p3" value="1"><span>1</span></label><label><input type="checkbox" name="b1p3" value="X"><span>X</span></label><label><input type="checkbox" name="b1p3" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p3" value="1"><span>1</span></label><label><input type="checkbox" name="b2p3" value="X"><span>X</span></label><label><input type="checkbox" name="b2p3" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p3" value="1"><span>1</span></label><label><input type="checkbox" name="b3p3" value="X"><span>X</span></label><label><input type="checkbox" name="b3p3" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p3" value="1"><span>1</span></label><label><input type="checkbox" name="b4p3" value="X"><span>X</span></label><label><input type="checkbox" name="b4p3" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p3" value="1"><span>1</span></label><label><input type="checkbox" name="b5p3" value="X"><span>X</span></label><label><input type="checkbox" name="b5p3" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p3" value="1"><span>1</span></label><label><input type="checkbox" name="b6p3" value="X"><span>X</span></label><label><input type="checkbox" name="b6p3" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p3" value="1"><span>1</span></label><label><input type="checkbox" name="b7p3" value="X"><span>X</span></label><label><input type="checkbox" name="b7p3" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p3" value="1"><span>1</span></label><label><input type="checkbox" name="b8p3" value="X"><span>X</span></label><label><input type="checkbox" name="b8p3" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="3"><span>3</span></label></td>
+          <td class="comb"><label><input type="radio" name="triples" value="3"><span>3</span></label></td>
+        </tr>
+        <!-- Partido 4 -->
+        <tr class="separador">
+          <th class="partido"><div><span>SPORTING - R. MADRID</span><span class="num">4</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p4" value="1"><span>1</span></label><label><input type="checkbox" name="b1p4" value="X"><span>X</span></label><label><input type="checkbox" name="b1p4" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p4" value="1"><span>1</span></label><label><input type="checkbox" name="b2p4" value="X"><span>X</span></label><label><input type="checkbox" name="b2p4" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p4" value="1"><span>1</span></label><label><input type="checkbox" name="b3p4" value="X"><span>X</span></label><label><input type="checkbox" name="b3p4" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p4" value="1"><span>1</span></label><label><input type="checkbox" name="b4p4" value="X"><span>X</span></label><label><input type="checkbox" name="b4p4" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p4" value="1"><span>1</span></label><label><input type="checkbox" name="b5p4" value="X"><span>X</span></label><label><input type="checkbox" name="b5p4" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p4" value="1"><span>1</span></label><label><input type="checkbox" name="b6p4" value="X"><span>X</span></label><label><input type="checkbox" name="b6p4" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p4" value="1"><span>1</span></label><label><input type="checkbox" name="b7p4" value="X"><span>X</span></label><label><input type="checkbox" name="b7p4" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p4" value="1"><span>1</span></label><label><input type="checkbox" name="b8p4" value="X"><span>X</span></label><label><input type="checkbox" name="b8p4" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="4"><span>4</span></label></td>
+          <td class="comb"><label><input type="radio" name="triples" value="4"><span>4</span></label></td>
+        </tr>
+        <!-- Partido 5 -->
+        <tr>
+          <th class="partido"><div><span>BETIS - VILLARREAL</span><span class="num">5</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p5" value="1"><span>1</span></label><label><input type="checkbox" name="b1p5" value="X"><span>X</span></label><label><input type="checkbox" name="b1p5" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p5" value="1"><span>1</span></label><label><input type="checkbox" name="b2p5" value="X"><span>X</span></label><label><input type="checkbox" name="b2p5" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p5" value="1"><span>1</span></label><label><input type="checkbox" name="b3p5" value="X"><span>X</span></label><label><input type="checkbox" name="b3p5" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p5" value="1"><span>1</span></label><label><input type="checkbox" name="b4p5" value="X"><span>X</span></label><label><input type="checkbox" name="b4p5" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p5" value="1"><span>1</span></label><label><input type="checkbox" name="b5p5" value="X"><span>X</span></label><label><input type="checkbox" name="b5p5" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p5" value="1"><span>1</span></label><label><input type="checkbox" name="b6p5" value="X"><span>X</span></label><label><input type="checkbox" name="b6p5" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p5" value="1"><span>1</span></label><label><input type="checkbox" name="b7p5" value="X"><span>X</span></label><label><input type="checkbox" name="b7p5" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p5" value="1"><span>1</span></label><label><input type="checkbox" name="b8p5" value="X"><span>X</span></label><label><input type="checkbox" name="b8p5" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="5"><span>5</span></label></td>
+          <td class="comb"><label><input type="radio" name="triples" value="5"><span>5</span></label></td>
+        </tr>
+        <!-- Partido 6 -->
+        <tr>
+          <th class="partido"><div><span>ESPANYOL - GETAFE</span><span class="num">6</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p6" value="1"><span>1</span></label><label><input type="checkbox" name="b1p6" value="X"><span>X</span></label><label><input type="checkbox" name="b1p6" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p6" value="1"><span>1</span></label><label><input type="checkbox" name="b2p6" value="X"><span>X</span></label><label><input type="checkbox" name="b2p6" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p6" value="1"><span>1</span></label><label><input type="checkbox" name="b3p6" value="X"><span>X</span></label><label><input type="checkbox" name="b3p6" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p6" value="1"><span>1</span></label><label><input type="checkbox" name="b4p6" value="X"><span>X</span></label><label><input type="checkbox" name="b4p6" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p6" value="1"><span>1</span></label><label><input type="checkbox" name="b5p6" value="X"><span>X</span></label><label><input type="checkbox" name="b5p6" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p6" value="1"><span>1</span></label><label><input type="checkbox" name="b6p6" value="X"><span>X</span></label><label><input type="checkbox" name="b6p6" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p6" value="1"><span>1</span></label><label><input type="checkbox" name="b7p6" value="X"><span>X</span></label><label><input type="checkbox" name="b7p6" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p6" value="1"><span>1</span></label><label><input type="checkbox" name="b8p6" value="X"><span>X</span></label><label><input type="checkbox" name="b8p6" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="6"><span>6</span></label></td>
+          <td class="comb"><label><input type="radio" name="triples" value="6"><span>6</span></label></td>
+        </tr>
+        <!-- Partido 7 -->
+        <tr>
+          <th class="partido"><div><span>LEVANTE - CELTA</span><span class="num">7</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p7" value="1"><span>1</span></label><label><input type="checkbox" name="b1p7" value="X"><span>X</span></label><label><input type="checkbox" name="b1p7" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p7" value="1"><span>1</span></label><label><input type="checkbox" name="b2p7" value="X"><span>X</span></label><label><input type="checkbox" name="b2p7" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p7" value="1"><span>1</span></label><label><input type="checkbox" name="b3p7" value="X"><span>X</span></label><label><input type="checkbox" name="b3p7" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p7" value="1"><span>1</span></label><label><input type="checkbox" name="b4p7" value="X"><span>X</span></label><label><input type="checkbox" name="b4p7" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p7" value="1"><span>1</span></label><label><input type="checkbox" name="b5p7" value="X"><span>X</span></label><label><input type="checkbox" name="b5p7" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p7" value="1"><span>1</span></label><label><input type="checkbox" name="b6p7" value="X"><span>X</span></label><label><input type="checkbox" name="b6p7" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p7" value="1"><span>1</span></label><label><input type="checkbox" name="b7p7" value="X"><span>X</span></label><label><input type="checkbox" name="b7p7" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p7" value="1"><span>1</span></label><label><input type="checkbox" name="b8p7" value="X"><span>X</span></label><label><input type="checkbox" name="b8p7" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="7"><span>7</span></label></td>
+          <td class="comb"><label><input type="radio" name="triples" value="7"><span>7</span></label></td>
+        </tr>
+        <!-- Partido 8 -->
+        <tr class="separador">
+          <th class="partido"><div><span>ALMERÍA - LEGANÉS</span><span class="num">8</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p8" value="1"><span>1</span></label><label><input type="checkbox" name="b1p8" value="X"><span>X</span></label><label><input type="checkbox" name="b1p8" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p8" value="1"><span>1</span></label><label><input type="checkbox" name="b2p8" value="X"><span>X</span></label><label><input type="checkbox" name="b2p8" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p8" value="1"><span>1</span></label><label><input type="checkbox" name="b3p8" value="X"><span>X</span></label><label><input type="checkbox" name="b3p8" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p8" value="1"><span>1</span></label><label><input type="checkbox" name="b4p8" value="X"><span>X</span></label><label><input type="checkbox" name="b4p8" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p8" value="1"><span>1</span></label><label><input type="checkbox" name="b5p8" value="X"><span>X</span></label><label><input type="checkbox" name="b5p8" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p8" value="1"><span>1</span></label><label><input type="checkbox" name="b6p8" value="X"><span>X</span></label><label><input type="checkbox" name="b6p8" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p8" value="1"><span>1</span></label><label><input type="checkbox" name="b7p8" value="X"><span>X</span></label><label><input type="checkbox" name="b7p8" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p8" value="1"><span>1</span></label><label><input type="checkbox" name="b8p8" value="X"><span>X</span></label><label><input type="checkbox" name="b8p8" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="8"><span>8</span></label></td>
+          <td class="comb"><label><input type="radio" name="triples" value="8"><span>8</span></label></td>
+        </tr>
+        <!-- Partido 9 -->
+        <tr>
+          <th class="partido"><div><span>MIRANDÉS - ZARAGOZA</span><span class="num">9</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p9" value="1"><span>1</span></label><label><input type="checkbox" name="b1p9" value="X"><span>X</span></label><label><input type="checkbox" name="b1p9" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p9" value="1"><span>1</span></label><label><input type="checkbox" name="b2p9" value="X"><span>X</span></label><label><input type="checkbox" name="b2p9" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p9" value="1"><span>1</span></label><label><input type="checkbox" name="b3p9" value="X"><span>X</span></label><label><input type="checkbox" name="b3p9" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p9" value="1"><span>1</span></label><label><input type="checkbox" name="b4p9" value="X"><span>X</span></label><label><input type="checkbox" name="b4p9" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p9" value="1"><span>1</span></label><label><input type="checkbox" name="b5p9" value="X"><span>X</span></label><label><input type="checkbox" name="b5p9" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p9" value="1"><span>1</span></label><label><input type="checkbox" name="b6p9" value="X"><span>X</span></label><label><input type="checkbox" name="b6p9" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p9" value="1"><span>1</span></label><label><input type="checkbox" name="b7p9" value="X"><span>X</span></label><label><input type="checkbox" name="b7p9" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p9" value="1"><span>1</span></label><label><input type="checkbox" name="b8p9" value="X"><span>X</span></label><label><input type="checkbox" name="b8p9" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="9"><span>9</span></label></td>
+          <td class="comb"><label><input type="radio" name="triples" value="9"><span>9</span></label></td>
+        </tr>
+        <!-- Partido 10 -->
+        <tr>
+          <th class="partido"><div><span>LLAGOSTERA - OSASUNA</span><span class="num">10</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p10" value="1"><span>1</span></label><label><input type="checkbox" name="b1p10" value="X"><span>X</span></label><label><input type="checkbox" name="b1p10" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p10" value="1"><span>1</span></label><label><input type="checkbox" name="b2p10" value="X"><span>X</span></label><label><input type="checkbox" name="b2p10" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p10" value="1"><span>1</span></label><label><input type="checkbox" name="b3p10" value="X"><span>X</span></label><label><input type="checkbox" name="b3p10" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p10" value="1"><span>1</span></label><label><input type="checkbox" name="b4p10" value="X"><span>X</span></label><label><input type="checkbox" name="b4p10" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p10" value="1"><span>1</span></label><label><input type="checkbox" name="b5p10" value="X"><span>X</span></label><label><input type="checkbox" name="b5p10" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p10" value="1"><span>1</span></label><label><input type="checkbox" name="b6p10" value="X"><span>X</span></label><label><input type="checkbox" name="b6p10" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p10" value="1"><span>1</span></label><label><input type="checkbox" name="b7p10" value="X"><span>X</span></label><label><input type="checkbox" name="b7p10" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p10" value="1"><span>1</span></label><label><input type="checkbox" name="b8p10" value="X"><span>X</span></label><label><input type="checkbox" name="b8p10" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="10"><span>10</span></label></td>
+          <!-- rowspan: esta celda ocupa 5 filas (de la 10 a la 14) -->
+          <td class="comb-texto" rowspan="5">&uarr;<br>TRIPLES</td>
+        </tr>
+        <!-- Partido 11 -->
+        <tr class="separador">
+          <th class="partido"><div><span>OVIEDO - LUGO</span><span class="num">11</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p11" value="1"><span>1</span></label><label><input type="checkbox" name="b1p11" value="X"><span>X</span></label><label><input type="checkbox" name="b1p11" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p11" value="1"><span>1</span></label><label><input type="checkbox" name="b2p11" value="X"><span>X</span></label><label><input type="checkbox" name="b2p11" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p11" value="1"><span>1</span></label><label><input type="checkbox" name="b3p11" value="X"><span>X</span></label><label><input type="checkbox" name="b3p11" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p11" value="1"><span>1</span></label><label><input type="checkbox" name="b4p11" value="X"><span>X</span></label><label><input type="checkbox" name="b4p11" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p11" value="1"><span>1</span></label><label><input type="checkbox" name="b5p11" value="X"><span>X</span></label><label><input type="checkbox" name="b5p11" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p11" value="1"><span>1</span></label><label><input type="checkbox" name="b6p11" value="X"><span>X</span></label><label><input type="checkbox" name="b6p11" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p11" value="1"><span>1</span></label><label><input type="checkbox" name="b7p11" value="X"><span>X</span></label><label><input type="checkbox" name="b7p11" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p11" value="1"><span>1</span></label><label><input type="checkbox" name="b8p11" value="X"><span>X</span></label><label><input type="checkbox" name="b8p11" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="11"><span>11</span></label></td>
+        </tr>
+        <!-- Partido 12 -->
+        <tr>
+          <th class="partido"><div><span>GIMNÀSTIC - ALBACETE</span><span class="num">12</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p12" value="1"><span>1</span></label><label><input type="checkbox" name="b1p12" value="X"><span>X</span></label><label><input type="checkbox" name="b1p12" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p12" value="1"><span>1</span></label><label><input type="checkbox" name="b2p12" value="X"><span>X</span></label><label><input type="checkbox" name="b2p12" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p12" value="1"><span>1</span></label><label><input type="checkbox" name="b3p12" value="X"><span>X</span></label><label><input type="checkbox" name="b3p12" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p12" value="1"><span>1</span></label><label><input type="checkbox" name="b4p12" value="X"><span>X</span></label><label><input type="checkbox" name="b4p12" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p12" value="1"><span>1</span></label><label><input type="checkbox" name="b5p12" value="X"><span>X</span></label><label><input type="checkbox" name="b5p12" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p12" value="1"><span>1</span></label><label><input type="checkbox" name="b6p12" value="X"><span>X</span></label><label><input type="checkbox" name="b6p12" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p12" value="1"><span>1</span></label><label><input type="checkbox" name="b7p12" value="X"><span>X</span></label><label><input type="checkbox" name="b7p12" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p12" value="1"><span>1</span></label><label><input type="checkbox" name="b8p12" value="X"><span>X</span></label><label><input type="checkbox" name="b8p12" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="12"><span>12</span></label></td>
+        </tr>
+        <!-- Partido 13 -->
+        <tr>
+          <th class="partido"><div><span>ALCORCÓN - MALLORCA</span><span class="num">13</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p13" value="1"><span>1</span></label><label><input type="checkbox" name="b1p13" value="X"><span>X</span></label><label><input type="checkbox" name="b1p13" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p13" value="1"><span>1</span></label><label><input type="checkbox" name="b2p13" value="X"><span>X</span></label><label><input type="checkbox" name="b2p13" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p13" value="1"><span>1</span></label><label><input type="checkbox" name="b3p13" value="X"><span>X</span></label><label><input type="checkbox" name="b3p13" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p13" value="1"><span>1</span></label><label><input type="checkbox" name="b4p13" value="X"><span>X</span></label><label><input type="checkbox" name="b4p13" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p13" value="1"><span>1</span></label><label><input type="checkbox" name="b5p13" value="X"><span>X</span></label><label><input type="checkbox" name="b5p13" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p13" value="1"><span>1</span></label><label><input type="checkbox" name="b6p13" value="X"><span>X</span></label><label><input type="checkbox" name="b6p13" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p13" value="1"><span>1</span></label><label><input type="checkbox" name="b7p13" value="X"><span>X</span></label><label><input type="checkbox" name="b7p13" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p13" value="1"><span>1</span></label><label><input type="checkbox" name="b8p13" value="X"><span>X</span></label><label><input type="checkbox" name="b8p13" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="13"><span>13</span></label></td>
+        </tr>
+        <!-- Partido 14 -->
+        <tr>
+          <th class="partido"><div><span>CÓRDOBA - VALLADOLID</span><span class="num">14</span></div></th>
+          <td class="bloque"><label><input type="checkbox" name="b1p14" value="1"><span>1</span></label><label><input type="checkbox" name="b1p14" value="X"><span>X</span></label><label><input type="checkbox" name="b1p14" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b2p14" value="1"><span>1</span></label><label><input type="checkbox" name="b2p14" value="X"><span>X</span></label><label><input type="checkbox" name="b2p14" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b3p14" value="1"><span>1</span></label><label><input type="checkbox" name="b3p14" value="X"><span>X</span></label><label><input type="checkbox" name="b3p14" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b4p14" value="1"><span>1</span></label><label><input type="checkbox" name="b4p14" value="X"><span>X</span></label><label><input type="checkbox" name="b4p14" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b5p14" value="1"><span>1</span></label><label><input type="checkbox" name="b5p14" value="X"><span>X</span></label><label><input type="checkbox" name="b5p14" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b6p14" value="1"><span>1</span></label><label><input type="checkbox" name="b6p14" value="X"><span>X</span></label><label><input type="checkbox" name="b6p14" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b7p14" value="1"><span>1</span></label><label><input type="checkbox" name="b7p14" value="X"><span>X</span></label><label><input type="checkbox" name="b7p14" value="2"><span>2</span></label></td>
+          <td class="bloque"><label><input type="checkbox" name="b8p14" value="1"><span>1</span></label><label><input type="checkbox" name="b8p14" value="X"><span>X</span></label><label><input type="checkbox" name="b8p14" value="2"><span>2</span></label></td>
+          <td class="comb"><label><input type="radio" name="dobles" value="14"><span>14</span></label></td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="pleno-titulo">PLENO AL 15</th>
+                <td colspan="4"><div class="pleno"><span>AT. MADRID</span><div><label><input type="radio" name="pleno-local" value="0"><span>0</span></label><label><input type="radio" name="pleno-local" value="1"><span>1</span></label><label><input type="radio" name="pleno-local" value="2"><span>2</span></label><label><input type="radio" name="pleno-local" value="M"><span>M</span></label></div></div></td>
+                <td colspan="4"><div class="pleno"><span>LAS PALMAS</span><div><label><input type="radio" name="pleno-visitante" value="0"><span>0</span></label><label><input type="radio" name="pleno-visitante" value="1"><span>1</span></label><label><input type="radio" name="pleno-visitante" value="2"><span>2</span></label><label><input type="radio" name="pleno-visitante" value="M"><span>M</span></label></div></div></td>
+                <td class="comb-texto" colspan="2" rowspan="2">&uarr;<br>DOBLES</td>
+            </tr>
+            <tr>
+                <th class="bloques-titulo">BLOQUES &rarr;</th>
+                <td class="num-bloque">1</td><td class="num-bloque">2</td><td class="num-bloque">3</td><td class="num-bloque">4</td><td class="num-bloque">5</td><td class="num-bloque">6</td><td class="num-bloque">7</td><td class="num-bloque">8</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+
+    <!-- ========== PIE ========== -->
+    <footer>
+        <div class="leyenda">
+            <span>BIEN</span><span class="caja-ejemplo">X</span>
+            <span>MAL</span><span class="caja-ejemplo mal">X</span>
+        </div>
+        <div class="botones">
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar apuesta</button>
+        </div>
+    </footer>
+
+    <!-- Marcas negras decorativas de las esquinas (position: absolute) -->
+    <span class="esquina izquierda"></span>
+    <span class="esquina derecha"></span>
+</form>
+
+</body>
+</html>
