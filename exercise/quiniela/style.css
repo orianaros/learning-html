@@ -189,8 +189,8 @@ caption {
     display: none;
 }
 
-/* ...y en su lugar mostramos el label como casilla */
-.quiniela label {
+/* ...y en su lugar mostramos el span como casilla */
+.quiniela label span {
     display: inline-block;
     width: 17px;
     height: 20px;
@@ -205,13 +205,13 @@ caption {
 }
 
 /* Pseudoclase :hover -> al pasar el ratón */
-.quiniela label:hover {
+.quiniela label span:hover {
     background-color: #ffd8d4;
 }
 
-/* :checked + label -> el label que va JUSTO DESPUÉS de una casilla marcada
+/* :checked + span -> el span que va JUSTO DESPUÉS de una casilla marcada
    (selector de hermano adyacente). Es más específico que el :hover, así que gana. */
-.quiniela input:checked + label {
+.quiniela label input:checked + span {
     background-color: #1c1c1c;
     color: white;
 }
@@ -222,7 +222,7 @@ caption {
     text-align: center;
 }
 
-.comb label {
+.comb span {
     font-size: 12px;
 }
 
